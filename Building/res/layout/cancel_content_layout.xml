@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View style="@style/line_style" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dip"
+        android:background="@color/bg_color_e6e9f2" />
+
+    <View style="@style/line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/order_content_tv_service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dip"
+            android:gravity="center"
+            android:textColor="@color/login_text_color"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dip"
+                    android:background="@drawable/cancel_time_icon" />
+
+                <TextView
+                    android:id="@+id/order_content_tv_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:text="取消时间："
+                    android:textColor="@color/text_color_ff6b6b"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/order_content_tv_accept_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dip"
+                    android:layout_toRightOf="@+id/order_content_tv_u"
+                    android:textColor="@color/text_color_ff6b6b"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dip"
+                    android:background="@drawable/service_time_icon" />
+
+                <TextView
+                    android:id="@+id/order_content_tv_service_time_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:text="服务时间："
+                    android:textColor="@color/text_color_77829c"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/order_content_tv_service_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dip"
+                    android:layout_toRightOf="@+id/order_content_tv_service_time_u"
+                    android:textColor="@color/text_color_77829c"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/line_style" />
+
+    <include layout="@layout/order_content_info_layout" />
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/order_content_reserve_buyer_ll"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/expand_order_info_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/cancel_delete_icon"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:text="删除"
+                android:textColor="@color/bar_bottom_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/line_style_ve" />
+
+        <LinearLayout
+            android:id="@+id/order_content_cancel_order_ll"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/expand_order_info_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/cancel_accept_icon"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:text="接单"
+                android:textColor="@color/bar_bottom_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+</LinearLayout>

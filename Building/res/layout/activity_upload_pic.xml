@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_one_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="12dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip" >
+
+            <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:gravity="center_vertical"
+                android:text="货物包装拍照"
+                android:textColor="@color/login_text_color"
+                android:textSize="18sp" />
+
+            <View style="@style/line_style" />
+
+            <com.e1858.building.view.NoScrollGridView
+                android:id="@+id/goods_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:columnWidth="100dip"
+                android:gravity="center"
+                android:horizontalSpacing="14dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_two_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="12dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip" >
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:gravity="center_vertical"
+                android:text="订单编号拍照"
+                android:textColor="@color/login_text_color"
+                android:textSize="18sp" />
+
+            <View style="@style/line_style" />
+
+            <com.e1858.building.view.NoScrollGridView
+                android:id="@+id/order_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:columnWidth="100dip"
+                android:gravity="center"
+                android:horizontalSpacing="14dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_three_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="12dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:gravity="center_vertical"
+                android:text="物流订单拍照"
+                android:textColor="@color/login_text_color"
+                android:textSize="18sp" />
+
+            <View style="@style/line_style" />
+
+            <com.e1858.building.view.NoScrollGridView
+                android:id="@+id/wuliu_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:columnWidth="100dip"
+                android:gravity="center"
+                android:horizontalSpacing="14dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dip" />
+    </LinearLayout>
+
+</ScrollView>

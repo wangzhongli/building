@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">美家美户</string>
+    <string name="action_settings">Settings</string>
+    <string name="network_fail">当前网络不可用，请检查你的网络设置。</string>
+    <string name="network_success">网络已连接</string>
+    <string name="network_mobile">您的手机正在使用移动网络，将产生数据流量。</string>
+    <string name="text_agreement">我已阅读并同意</string>
+    <string name="text_agreement_protocol">「工人注册许可及服务协议」</string>
+    <string name="text_dialog_loginout">温馨提示</string>
+    <string name="text_dialog_loginout_content">确定退出登录?</string>
+    <string name="text_verify_content">手机验证码是为了防范钱包密码被盗，保障账户安全的重要途径，通过手机验证后您能安全的使用手机钱包密码，轻松找回钱包密码</string>
+
+    <string-array name="pick_photo_items">
+        <item>拍照</item>
+        <item>从手机相册选取</item>
+    </string-array>
+    <string-array name="service_info_titles">
+        <item>服务类型</item>
+        <item>服务区域</item>
+        <item>服务工种</item>
+        <item>服务时间</item>
+        <item>人数</item>
+        <item>货车</item>
+        <item>货车吨数</item>
+        <item>推荐提货</item>
+    </string-array>
+    <string-array name="businessinfo_detail_titles">
+        <item>对方账户信息</item>
+        <item>到账时间</item>
+        <item>交易类型</item>
+        <item>服务类型</item>
+        <item>交易时间</item>
+        <item>流水号</item>
+        <item>交易结果</item>
+    </string-array>
+
+    <string name="no_result">对不起，暂时没有抢单数据！</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/pop_item_tv"
+    android:layout_height="32dip"
+    android:gravity="center_vertical"
+    android:textSize="12sp"
+    android:textColor="#393f4f"
+    android:paddingLeft="16dip"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+</TextView>

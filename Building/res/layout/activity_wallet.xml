@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_text_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/person_item_nor"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/listitem_balance"
+            layout="@layout/listitem_person_info" />
+
+        <View style="@style/listview_indent_sep" />
+
+        <include
+            android:id="@+id/listitem_bankCard"
+            layout="@layout/listitem_person_info" />
+
+        <View style="@style/listview_indent_sep"  android:visibility="gone" />
+
+        <include android:visibility="gone"
+            android:id="@+id/listitem_business"
+            layout="@layout/listitem_person_info" />
+ 
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/person_item_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="10dip" 
+    android:paddingBottom="10dip"
+    android:paddingRight="10dip"
+    android:paddingLeft="@dimen/listitem_indent"
+     >
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="头像"
+        android:textColor="#ff9da9b9"
+        android:textSize="18sp" />
+
+    <com.hg.android.widget.CircularImage
+        android:id="@+id/imageView"
+        android:layout_width="64.0dp"
+        android:layout_height="64.0dp"
+        android:background="@drawable/personal_head_icon_def" />
+
+    <ImageView
+        android:layout_width="12dip"
+        android:layout_height="12dip"
+        android:layout_marginLeft="8dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_right" />
+
+</LinearLayout>

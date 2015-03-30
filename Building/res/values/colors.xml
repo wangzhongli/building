@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <color name="listview_bg">#fff8f8f8</color>
+    <color name="listview_bg_dark">#ff393f4f</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_light">#ffff4444</color>
+    <color name="notes_textColor">#ffaaaaaa</color>
+    <color name="wuye_cm_button_normal">#ffd80c18</color>
+    <color name="wuye_cm_button_pressed">#ffec6100</color>
+    <color name="wuye_cm_button_disabled">#ffa0a0a0</color>
+    <color name="login_text_color">#393f4f</color>
+    <color name="bar_bottom_color">#4eb7cd</color>
+    
+    <color name="background_all">#e6e9f2</color>
+    <color name="line_divider_">#4d5567</color>
+     <!-- 抢单王选择背景颜色 -->
+    <color name="roborder_selete_bar">#5a6378</color>
+    <color name="list_item_bg_pressed">#57d1eb</color>
+    <color name="list_item_bg_normal">#f5f5f5</color>
+    <color name="text_color_77829c">#77829c</color>
+	<!-- 达人字体颜色 -->
+	<color name="text_color_ffae00">#ffae00</color>
+	<color name="person_item_nor">#5a6378</color>
+	<color name="person_item_press">#475065</color>
+	
+    <color name="btn_cancle_bg_color">#ffa0a0a0</color>
+    <color name="btn_cancle_bg_color_pressed">#ff8a8a8a</color>
+    <color name="dialog_background">#ffe7eaea</color>
+    <color name="btn_bg_color_enalbed">#ffa0a0a0</color>
+    
+    <color name="bg_color_e6e9f2">#e6e9f2</color>
+    <color name="bg_color_5a6378">#5a6378</color>
+    <color name="text_color_ff6b6b">#ff6b6b</color>
+    <color name="text_color_9da9b9">#9da9b9</color>
+    
+    <color name="text_color_49aa48">#49aa48</color>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/continue_service_rl_cause"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/cancel_item_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:gravity="center"
+            android:text="再次预约原因"
+            android:textColor="@color/login_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/continue_service_tv_cause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dip"
+            android:layout_toLeftOf="@+id/continue_service_iv_u"
+            android:gravity="center"
+            android:textColor="#9da9b9"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/continue_service_iv_u"
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <View
+        style="@style/line_style"
+        android:layout_width="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/continue_service_rl_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/cancel_item_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:gravity="center"
+            android:text="与买家协商时间"
+            android:textColor="@color/login_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/continue_service_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dip"
+            android:layout_toLeftOf="@+id/cancel_order_iv_1_u"
+            android:gravity="center"
+            android:textColor="#9da9b9"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/cancel_order_iv_1_u"
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <View
+        style="@style/line_style"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/reserve_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel_item_selector"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:gravity="center"
+            android:text="备注(最多60个字)"
+            android:textColor="#aaaaaa"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/continue_service_et_cause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入备注信息"
+            android:maxLength="60"
+            android:minLines="3"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:textColor="@color/login_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="8dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/continue_service_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/rob_info_btn_selecter"
+            android:text="继续服务"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

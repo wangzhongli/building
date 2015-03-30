@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:alpha="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/notice_list"
+        alpha:showAsAction="always"
+        android:icon="@drawable/ic_action_mail"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="消息"/>
+    <item
+        android:id="@+id/setting"
+        alpha:showAsAction="always"
+        android:icon="@drawable/ic_action_setting"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="设置"/>
+
+</menu>

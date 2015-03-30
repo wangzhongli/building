@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View style="@style/line_style" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dip"
+        android:background="@color/bg_color_e6e9f2" />
+
+    <View style="@style/line_style" />
+
+    <include layout="@layout/order_commen_layout" />
+
+    <View style="@style/line_style" />
+
+    <include layout="@layout/order_content_info_layout" />
+
+    <View style="@style/line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/order_content_reserve_buyer_ll"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/expand_order_info_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                 android:id="@+id/not_reserve_en_iv"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/reserve_ensure_icon"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/not_reserve_en_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="预约确认"
+                android:textColor="@color/bar_bottom_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/line_style_ve" />
+        <LinearLayout
+            android:id="@+id/order_content_reserve_modify_ll"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/expand_order_info_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/modify_reserve_icon"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="修改预约"
+                android:textColor="@color/bar_bottom_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/line_style_ve" />
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/order_content_cancel_order_ll" -->
+<!--             android:layout_width="0dip" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:background="@drawable/expand_order_info_selector" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="16dip" -->
+<!--                 android:layout_height="16dip" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:background="@drawable/cancel_icon" -->
+<!--                 android:scaleType="center" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="8dip" -->
+<!--                 android:text="取消订单" -->
+<!--                 android:textColor="@color/bar_bottom_color" -->
+<!--                 android:textSize="14sp" /> -->
+<!--         </LinearLayout> -->
+    </LinearLayout>
+
+    <View style="@style/line_style" />
+
+</LinearLayout>

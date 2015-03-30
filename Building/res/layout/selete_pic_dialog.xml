@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/dialog_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/take_pic"
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:background="@null"
+            android:gravity="center"
+            android:text="拍照"
+            android:textSize="18sp" />
+
+        <View style="@style/line_style" />
+
+        <Button
+            android:id="@+id/choose_pic"
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="从手机相册中选择"
+            android:textSize="18sp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

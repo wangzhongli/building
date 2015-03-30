@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_text_color"
+    android:orientation="vertical" >
+    
+<!--     <include layout="@layout/hg_include_loading"/> -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_text_color"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@color/person_item_nor"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/listitem_type"
+                layout="@layout/listitem_person_info" />
+
+            <View style="@style/listview_indent_sep" />
+
+            <include
+                android:id="@+id/listitem_area"
+                layout="@layout/listitem_person_info" />
+
+            <View style="@style/listview_indent_sep" />
+            <include
+                android:id="@+id/listitem_service_worker"
+                layout="@layout/listitem_person_info" />
+
+            <View style="@style/listview_indent_sep" />
+
+            <include
+                android:id="@+id/listitem_time"
+                layout="@layout/listitem_person_info" />
+
+            <View style="@style/listview_indent_sep" />
+
+            <include
+                android:id="@+id/listitem_persons"
+                layout="@layout/listitem_person_info" />
+
+            <View style="@style/listview_indent_sep" />
+
+            <include
+                android:id="@+id/listitem_cars"
+                layout="@layout/listitem_person_info" />
+
+            <View style="@style/listview_indent_sep" />
+
+            <include
+                android:id="@+id/listitem_carTonnage"
+                layout="@layout/listitem_person_info" />
+
+            <View style="@style/listview_indent_sep" />
+
+            <include
+                android:id="@+id/listitem_pickup"
+                layout="@layout/listitem_person_info" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/expand_order_info_selector"
+    android:orientation="vertical"
+    android:paddingBottom="8dip"
+    android:visibility="visible" >
+
+    <View style="@style/line_style" />
+
+    <TextView
+        android:id="@+id/roborder_list_item_tv_sn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="4dip"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_77829c"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_order_"
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/centent_shouhuo_icon" />
+
+        <TextView
+            android:id="@+id/order_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/iv_order_"
+            android:text="收货人："
+            android:textColor="@color/text_color_77829c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_content_tv_buyer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:layout_toRightOf="@+id/order_content_tv"
+            android:textColor="@color/login_text_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_order_2"
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/content_mobile_icon" />
+
+        <TextView
+            android:id="@+id/order_content_mobile_u"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/iv_order_2"
+            android:text="手机："
+            android:textColor="@color/text_color_77829c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_content_tv_buyer_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:layout_toRightOf="@+id/order_content_mobile_u"
+            android:textColor="@color/bar_bottom_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_order_3"
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/content_address_icon" />
+
+        <TextView
+            android:id="@+id/order_content_acc_u"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/iv_order_3"
+            android:text="收货地址："
+            android:textColor="@color/text_color_77829c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_content_tv_buyer_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:layout_toRightOf="@+id/order_content_acc_u"
+            android:textColor="@color/login_text_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_order_4"
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dip"
+            android:background="@drawable/content_order_from" />
+
+        <TextView
+            android:id="@+id/order_content_from_u"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_toRightOf="@+id/iv_order_4"
+            android:text="订单来源："
+            android:textColor="@color/text_color_77829c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_content_tv_order_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:layout_toRightOf="@+id/order_content_from_u"
+            android:textColor="@color/login_text_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 上部 -->
+
+            <View style="@style/line_style" />
+
+            <LinearLayout
+                android:id="@+id/roborder_list_item_arrow_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dip"
+                android:orientation="vertical"
+                android:paddingBottom="8dip"
+                android:paddingTop="8dip" >
+
+                <TextView
+                    android:id="@+id/roborder_list_item_tv_servicetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dip"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/roborder_list_item_tv_sn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_style"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip" />
+            <!-- 下部 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- 下部  左边 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dip"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_marginLeft="16dip"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/icon_map_rob_add_price_1"
+                            android:layout_width="16dip"
+                            android:layout_height="16dip"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/order_info_servicr_price" />
+
+                        <TextView
+                            android:id="@+id/add_rob_1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dip"
+                            android:layout_toRightOf="@+id/icon_map_rob_add_price_1"
+                            android:text="服务报价："
+                            android:textColor="@color/text_color_ff6b6b"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/order_info_tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/add_rob_1_1"
+                            android:maxLines="2"
+                            android:textColor="@color/text_color_ff6b6b"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_marginLeft="16dip"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/icon_map_rob_add"
+                            android:layout_width="16dip"
+                            android:layout_height="16dip"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/icon_map_rob" />
+
+                        <TextView
+                            android:id="@+id/add_rob_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dip"
+                            android:layout_toRightOf="@+id/icon_map_rob_add"
+                            android:text="地址："
+                            android:textColor="#77829c"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/roborder_list_item_tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/add_rob_1"
+                            android:textColor="@color/login_text_color"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_marginLeft="16dip"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/icon_map_rob_ser_time"
+                            android:layout_width="16dip"
+                            android:layout_height="16dip"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/icon_time_rob" />
+
+                        <TextView
+                            android:id="@+id/add_rob_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dip"
+                            android:layout_toRightOf="@+id/icon_map_rob_ser_time"
+                            android:text="服务时间："
+                            android:textColor="#77829c"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/roborder_list_item_tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/add_rob_time"
+                            android:textColor="@color/login_text_color"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/order_info_ll_rob"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/rob_info_btn_selecter"
+                android:gravity="center"
+                android:onClick="robOrder"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_rob_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:text="抢单"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 第二部分 -->
+
+        <View style="@style/line_style" />
+
+        <TextView
+            style="@style/order_info_text_style"
+            android:text="客户信息" />
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="6dip" >
+
+            <LinearLayout style="@style/order_info_item" >
+
+                <TextView
+                    style="@style/order_info_item_tv_left"
+                    android:text="买家姓名：" />
+
+                <TextView
+                    android:id="@+id/roborder_item_tv_name"
+                    style="@style/order_info_item_tv_right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/order_info_item" >
+
+                <TextView
+                    style="@style/order_info_item_tv_left"
+                    android:text="联系电话：" />
+
+                <TextView
+                    android:id="@+id/roborder_item_tv_mobile"
+                    style="@style/order_info_item_tv_right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/order_info_item" >
+
+                <TextView
+                    style="@style/order_info_item_tv_left"
+                    android:text="详细地址：" />
+
+                <TextView
+                    android:id="@+id/roborder_item_tv_address"
+                    style="@style/order_info_item_tv_right" />
+            </LinearLayout>
+
+            <View
+                style="@style/line_style"
+                android:layout_marginTop="6dip" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/order_info_text_style"
+            android:text="商品信息" />
+
+        <View style="@style/line_style" />
+        <!-- 商品 -->
+
+        <ListView
+            android:id="@+id/order_info_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/activity_orderinfo_empty_tv"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dip"
+            android:text="没有商品信息"
+            android:textColor="#77829c"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/order_info_text_style"
+            android:text="物流信息"
+            android:visibility="gone" />
+
+        <View style="@style/line_style" />
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:background="@color/white" -->
+        <!-- android:visibility="gone" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <LinearLayout style="@style/order_info_item" > -->
+
+
+        <!-- <TextView -->
+        <!-- style="@style/order_info_item_tv_left" -->
+        <!-- android:text="物流公司：" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/roborder_item_tv_logistics" -->
+        <!-- style="@style/order_info_item_tv_right" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout style="@style/order_info_item" > -->
+
+
+        <!-- <TextView -->
+        <!-- style="@style/order_info_item_tv_left" -->
+        <!-- android:text="物流数量：" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/roborder_item_tv_logistics_num" -->
+        <!-- style="@style/order_info_item_tv_right" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <LinearLayout style="@style/order_info_item" > -->
+
+
+        <!-- <TextView -->
+        <!-- style="@style/order_info_item_tv_left" -->
+        <!-- android:text="提货地址：" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/roborder_item_tv_tihuo" -->
+        <!-- style="@style/order_info_item_tv_right" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <View style="@style/line_style" /> -->
+        <!-- </LinearLayout> -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dip" />
+    </LinearLayout>
+
+</ScrollView>

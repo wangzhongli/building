@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_5a6378"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_5a6378"
+        android:orientation="horizontal" >
+
+        <com.hg.android.widget.CircularImage
+            android:id="@+id/head_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="16dip"
+             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="16dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/com_item_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#9da9b9"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/com_item_tv_dec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:scrollbars="vertical"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip" >
+
+                <TextView
+                    android:id="@+id/com_item_tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#aaaaaa"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/com_item_iv_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dip"
+                    android:scaleType="center" />
+            </RelativeLayout>
+
+            <View
+                android:visibility="invisible"
+                style="@style/line_style"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="6dip"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

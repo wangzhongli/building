@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View style="@style/line_style" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip" >
+
+                <TextView
+                    android:id="@+id/mobil_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_48"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="手机号    "
+                    android:textColor="#77829C"
+                    android:textSize="18sp" />
+
+                <com.e1858.building.view.ClearEditText
+                    android:id="@+id/input_userName"
+                    style="@style/edittext_style_with_null_bg"
+                    android:layout_toRightOf="@+id/mobil_u"
+                    android:hint="请输入您的手机号"
+                    android:inputType="phone"
+                     />
+            </RelativeLayout>
+
+            <View style="@style/line_style" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip" >
+
+                <TextView
+                    android:id="@+id/verify_pwd_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_48"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="动态密码"
+                    android:textColor="#77829C"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_48"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dip"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:layout_toRightOf="@+id/verify_pwd_u"
+                    android:drawablePadding="@dimen/activity_padding"
+                    android:hint="请输入动态密码"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:paddingRight="5dip"
+                    android:textColor="@color/login_text_color" />
+
+                <View
+                    android:id="@+id/line"
+                    style="@style/line_style_ve"
+                    android:layout_toLeftOf="@+id/get_verify" />
+
+                <Button
+                    android:id="@+id/get_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_48"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/bar_bottom_color"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <View style="@style/line_style" />
+
+            <include layout="@layout/include_login_layout" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

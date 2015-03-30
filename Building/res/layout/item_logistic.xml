@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 以下三个决定了总高度 -->
+
+    <TextView
+        android:id="@+id/logistic_info_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="8dip"
+        android:gravity="left"
+        android:text="郑州华泰物流总部已经收件"
+        android:textColor="#ff434343"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/logistic_info_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/logistic_info_content"
+        android:layout_below="@id/logistic_info_content"
+        android:gravity="left"
+        android:paddingTop="4dip"
+        android:text="2015-3-5 13:46:34"
+        android:textColor="#ffaaaaaa"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view_space_v"
+        android:layout_width="0dip"
+        android:layout_height="8dip"
+        android:layout_alignLeft="@id/logistic_info_content"
+        android:layout_below="@id/logistic_info_time" />
+    <!-- 以上三个决定了总高度 -->
+
+
+    <!-- 这个是icon定位view -->
+
+    <View
+        android:id="@+id/view_ancher"
+        android:layout_width="0dip"
+        android:layout_height="8dip"
+        android:layout_alignTop="@id/logistic_info_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="5sp" />
+
+    <View
+        android:id="@+id/sepTop"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/view_ancher"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:background="@color/lightgray" />
+
+    <View
+        android:id="@+id/sepBottom"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/view_space_v"
+        android:layout_alignLeft="@id/sepTop"
+        android:layout_below="@id/sepTop"
+        android:background="@color/lightgray" />
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_alignLeft="@id/view_ancher"
+        android:layout_alignTop="@id/view_ancher"
+        android:background="@drawable/mall_order_status_green"
+        android:contentDescription="@null" />
+
+    <View
+        android:id="@+id/sepBottom_30"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="30dip"
+        android:background="@color/lightgray" />
+
+    <View
+        android:id="@+id/sepBottom_0"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dip"
+        android:background="@color/lightgray" />
+
+</RelativeLayout>

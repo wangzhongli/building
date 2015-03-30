@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:background="@drawable/expand_order_info_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/order_content_tv_service_type"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dip"
+        android:gravity="center"
+        android:textColor="@color/login_text_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:background="@drawable/service_time_icon" />
+
+            <TextView
+                android:id="@+id/order_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:layout_toRightOf="@+id/iv"
+                android:text="接单时间："
+                android:textColor="@color/text_color_77829c"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/order_content_tv_accept_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/order_content_tv"
+                android:textColor="@color/text_color_77829c"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_service_u"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:background="@drawable/icon_time_rob" />
+
+            <TextView
+                android:id="@+id/order_content_service_u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:layout_toRightOf="@+id/iv_service_u"
+                android:text="服务时间："
+                android:textColor="@color/text_color_77829c"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/order_content_tv_service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/order_content_service_u"
+                android:textColor="@color/text_color_77829c"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

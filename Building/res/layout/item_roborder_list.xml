@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 上部 -->
+
+    <RelativeLayout
+        android:id="@+id/roborder_list_item_arrow_rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dip" >
+
+        <TextView
+            android:id="@+id/roborder_list_item_tv_servicetype"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/login_text_color"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/roborder_list_item_arrow"
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:background="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <View
+        style="@style/line_style"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip" />
+    <!-- 下部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+        <!-- 下部  左边 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="10dip"
+            android:layout_toLeftOf="@+id/roborder_list_item_ll_rob"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_marginLeft="16dip"
+                android:layout_weight="1"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/icon_map_rob_1"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/rob_list_item_goods_type" />
+
+                <TextView
+                    android:id="@+id/add_rob_goods_type_u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_toRightOf="@+id/icon_map_rob_1"
+                    android:text="商品类型："
+                    android:textColor="@color/text_color_ff6b6b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/roborder_list_item_tv_goods_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/add_rob_goods_type_u"
+                    android:maxLines="2"
+                    android:textColor="@color/text_color_ff6b6b"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_marginLeft="16dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/icon_map_rob1"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/icon_map_rob" />
+
+                <TextView
+                    android:id="@+id/add_rob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_toRightOf="@+id/icon_map_rob1"
+                    android:text="地址："
+                    android:textColor="#77829c"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/roborder_list_item_tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/add_rob"
+                    android:maxLines="2"
+                    android:text="阿德哥和国家和高考将很快更换发动机看看"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_marginLeft="16dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/icon_map_rob2"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/icon_time_rob" />
+
+                <TextView
+                    android:id="@+id/add_rob_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_toRightOf="@+id/icon_map_rob2"
+                    android:text="服务时间："
+                    android:textColor="#77829c"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/roborder_list_item_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/add_rob_time"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 下部  右边 -->
+
+        <LinearLayout
+            android:id="@+id/roborder_list_item_ll_rob"
+            android:layout_width="88dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rob_btn_selecter" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/icon_rob_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="抢单"
+                android:layout_marginLeft="8dip"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

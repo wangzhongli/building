@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.e1858.building"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FIFESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.LauncherProvider" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="getui.permission.GetuiService.com.e1858.building" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 自定义权限 -->
+
+    <permission
+        android:name="getui.permission.GetuiService.com.e1858.building"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <application
+        android:name="com.e1858.building.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 高德地图key 正式版本的key,正式上线时使用 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="95a21af8876be0a379250b7ef12254bd" />
+
+        <!-- 测试版本的可以，方便调试使用 -->
+<!--         <meta-data -->
+<!--             android:name="com.amap.api.v2.apikey" -->
+<!--             android:value="b2471e3774a672e541f5788475ad4ce4" /> -->
+
+        <activity
+            android:name="com.e1858.building.splash.WelcomeActivity"
+            android:label="@string/app_name"
+            android:logo="@drawable/launcher"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.e1858.building.splash.SplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.login.LoginActivity"
+            android:label="工人登录"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.login.RegisterActivity"
+            android:label="工人注册"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.password.ForgetActivity"
+            android:label="忘记密码"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.order.RobListActivity"
+            android:label="抢单"
+            android:launchMode="singleTop"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.order.OrderInfoActivity"
+            android:label="订单详情"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.order.MapOrderActivity"
+            android:label="地图抢单"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.PersonCenterActivity"
+            android:label="个人中心"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.setting.SettingActivity"
+            android:label="我的设置"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.NotReserveActivity"
+            android:label="等待预约"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.NotAcceptActivity"
+            android:label="待提货"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.NotCompleteActivity"
+            android:label="确认完成"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.OrderCompleteActivity"
+            android:label="已完成订单"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.OrderCancelActivity"
+            android:label="已取消订单"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.PersonInfoActivity"
+            android:label="个人信息"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.GetPhotoActivity"
+            android:label="查看照片"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.upload.UploadPicActivity"
+            android:label="上传照片"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.ServiceInfoActivity"
+            android:label="服务信息"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.mycase.MyCaseActivity"
+            android:label="我的案例"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.CommentActivity"
+            android:label="查看评价"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.persondata.ReserveActivity"
+            android:label="预约时间"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.password.ChangePasswordActivity"
+            android:label="登录密码"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.password.SetMoneyPwdActiivty"
+            android:label="设置钱包密码"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.password.ChangeMoneyPwdActiivty"
+            android:label="修改钱包密码"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.password.PasswordManagerActivity"
+            android:label="密码管理"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.BusinessActivity"
+            android:label="交易记录"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.BusinessDetailActivity"
+            android:label="交易详情"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.BankActivity"
+            android:label="选择银行"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.BankCardActivity"
+            android:label="管理银行卡"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.BankCardDetailActivity"
+            android:label="银行卡详情"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.BankCardAddActivity"
+            android:label="添加银行卡"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.BankCardDeleteActivity"
+            android:label="删除银行卡"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.RealNameAuthActivity"
+            android:label="实名验证"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.wallet.WalletActivity"
+            android:label="我的钱包"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.view.WebPictureBrowser"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hg.android.app.LocalPictureBrowser"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.upload.SelectPicActivity"
+            android:label="相册"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.upload.ImageGridActivity"
+            android:label="相册"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.base.WebViewActivity"
+            android:label="相册"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.notice.NoticeListActivity"
+            android:label="通知列表"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.notice.NoticeActivity"
+            android:label="通知消息"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.order.OrderDetailActivity"
+            android:label="订单详细信息"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.order.CancelOrderActivity"
+            android:label="取消订单"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.order.ContinueServiceActivity"
+            android:label="继续服务"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.e1858.building.order.LogisticInfosActivity"
+            android:label="物流信息"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hg.android.app.CropImageActivity"
+            android:label="剪切头像"
+            android:logo="@drawable/launcher"
+            android:screenOrientation="portrait" />
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="vPjVIjuA2x60DyzYapgwo2" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="yPNn9H0kxA76XAggkO9t83" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="0PhH5nqaYC9c6G1eColJo9" />
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+
+        <receiver
+            android:name="com.e1858.building.receiver.PushMessageService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.vPjVIjuA2x60DyzYapgwo2" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 配置弹框activity -->
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.vPjVIjuA2x60DyzYapgwo2" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+
+        <!-- 个推download模块配置 -->
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver
+            android:name="com.igexin.download.DownloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.e1858.building"
+            android:process=":pushservice" />
+        <!-- android:authorities="downloads.第三方包名" -->
+        <!-- ====================================================== -->
+
+
+        <!-- ======================================================================= -->
+        <!-- 友盟sdk配置 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:label="用户反馈"
+            android:logo="@drawable/launcher" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54af5f35fd98c56f0a000535" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="default" />
+        <!-- ================================================================== -->
+    </application>
+
+</manifest>

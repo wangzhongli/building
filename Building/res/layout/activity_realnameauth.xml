@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_text_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dip"
+        android:orientation="vertical"
+        android:padding="16dip" >
+
+        <EditText
+            android:id="@+id/editText_realName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="请输入真实姓名"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_IDNumber"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:hint="请输入身份证号码"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="@null"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="身份证正反面照片" />
+
+        <com.hg.android.widget.ImagesGridEditView
+            android:layout_marginTop="8dip"
+            android:id="@+id/imagesGridEditView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="4dip"
+            android:stretchMode="columnWidth"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="4dip" />
+    </LinearLayout>
+
+</ScrollView>

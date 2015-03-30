@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_text_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/person_item_nor"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/listitem_city"
+            layout="@layout/listitem_person_info" />
+
+        <View style="@style/listview_indent_sep" />
+
+        <include
+            android:id="@+id/listitem_cache"
+            layout="@layout/listitem_person_info" />
+
+        <View style="@style/listview_indent_sep" />
+
+        <include
+            android:id="@+id/listitem_push"
+            layout="@layout/listitem_switch" />
+
+        <View style="@style/listview_indent_sep" />
+
+        <include
+            android:id="@+id/listitem_400"
+            layout="@layout/listitem_person_info" />
+
+        <View style="@style/listview_indent_sep" />
+
+        <include
+            android:id="@+id/listitem_update"
+            layout="@layout/listitem_person_info" />
+
+        <View style="@style/listview_indent_sep" />
+
+        <include
+            android:id="@+id/listitem_feedback"
+            layout="@layout/listitem_person_info" />
+
+        <View style="@style/listview_indent_sep" />
+
+        <include
+            android:id="@+id/listitem_about"
+            layout="@layout/listitem_person_info" />
+    </LinearLayout>
+
+</ScrollView>
